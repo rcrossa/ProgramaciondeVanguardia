@@ -1,4 +1,4 @@
-# Programación de Vanguardia — Java Educational Project
+# Vanguard Programming — Java Educational Project
 
 
 
@@ -6,7 +6,7 @@
 ---
 
 ## Overview
-This repository contains coursework for the subject **Programación de Vanguardia**. It focuses on modern Java development practices, testing, automation, and documentation.
+This repository contains coursework for the subject **Vanguard Programming**. It focuses on modern Java development practices, testing, automation, and documentation.
 
 ## Features
 - Clear project structure
@@ -31,25 +31,32 @@ Open in your preferred IDE (IntelliJ IDEA recommended).
   mvn clean verify
   ```
 
-# Cómo ejecutar el proyecto
+## How to Run the Project
 
-1. Abre una terminal en la raíz del proyecto.
+1. Open a terminal in the project root directory.
 
-2. Ejecuta el siguiente comando para iniciar el servidor:
+2. Run the following command to start the server:
 
 ```bash
 mvn spring-boot:run
 ```
 
-O bien, puedes compilar y ejecutar el JAR:
+Alternatively, you can build and run the JAR:
 
 ```bash
 mvn clean package
 java -jar target/programacion_de_vanguardia-0.0.1-SNAPSHOT.jar
 ```
 
-El servidor se iniciará en el puerto 8090 (puedes cambiarlo en `src/main/resources/application.properties`).
+The server will start on port 8090 (you can change this in `src/main/resources/application.properties`).
 
+## How to Configure IntelliJ IDEA to Run the Executable
+
+1. Open the project in IntelliJ IDEA.
+2. Go to **Run > Edit Configurations...**
+3. Click the "+" button and select **Spring Boot**.
+4. Set the main class to `com.example.DemoApplication`.
+5. Apply and run the configuration.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
