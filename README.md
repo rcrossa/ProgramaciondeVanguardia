@@ -58,6 +58,30 @@ The server will start on port 8090 (you can change this in `src/main/resources/a
 4. Set the main class to `com.example.DemoApplication`.
 5. Apply and run the configuration.
 
+## Development Workflow
+
+For each new exercise or code implementation, follow these steps:
+
+1. **Create a new branch from `develop`:**
+   ```sh
+   git checkout develop
+   git pull
+   git checkout -b feature/your-feature-name
+   ```
+2. **Develop your changes on the new branch.**
+
+3. **When finished, merge your branch into `develop` using a squash commit:**
+   ```sh
+   git checkout develop
+   git pull
+   git merge --squash feature/your-feature-name
+   git commit -m "Describe the exercise or implementation"
+   git push
+   ```
+4. **Do not delete the feature branch after merging.**
+
+This workflow keeps the commit history clean and makes it easy to track what was implemented for each exercise or feature.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
